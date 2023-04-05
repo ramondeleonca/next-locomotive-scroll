@@ -17,13 +17,13 @@
   "license": "MIT",
   "devDependencies": {
     "@types/gsap": "^3.0.0",
-    "@types/locomotive-scroll": "^4.1.0",
     "@types/node": "18.15.10",
     "@types/react": "^18.0.30",
     "next": "^13.2.4",
     "typescript": "^5.0.2"
   },
   "dependencies": {
+    "@types/locomotive-scroll": "^4.1.0",
     "gsap": "^3.11.5",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0"
