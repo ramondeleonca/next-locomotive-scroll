@@ -1,6 +1,6 @@
 {
   "name": "next-locomotive-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Locomotive scroll wrapper for NEXT.JS",
   "main": "src/components/NextLocomotiveScroll.js",
   "scripts": {
