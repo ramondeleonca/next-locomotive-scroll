@@ -27,5 +27,10 @@
     "gsap": "^3.11.5",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/ramondeleonca/next-locomotive-scrollhttps://github.com/ramondeleonca/next-locomotive-scroll",
+    "directory": "/"
   }
 }
