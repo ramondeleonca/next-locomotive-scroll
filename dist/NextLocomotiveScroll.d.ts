@@ -8,7 +8,7 @@ type Props = {
 } & DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 export default class NextLocomotiveScroll extends React.Component<Props> {
     instance: __LocomotiveScroll;
-    container: any;
+    container: React.RefObject<HTMLDivElement>;
     state: {
         isReady: boolean;
     };
