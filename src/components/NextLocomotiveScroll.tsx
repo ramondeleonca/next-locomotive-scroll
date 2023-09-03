@@ -1,6 +1,6 @@
 "use client";
 
-import { RefObject, createContext, useContext, useEffect, useRef, useState } from "react";
+import React, { RefObject, createContext, useContext, useEffect, useRef, useState } from "react";
 import __LocomotiveScroll from 'locomotive-scroll';
 
 type NextLocomotiveContextValue = {

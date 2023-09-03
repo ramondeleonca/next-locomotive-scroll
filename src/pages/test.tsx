@@ -1,5 +1,6 @@
 import "locomotive-scroll/dist/locomotive-scroll.min.css"
 import NextLocomotiveScroll from "../components/NextLocomotiveScroll";
+import React from "react";
 
 export default function Test() {
     return (

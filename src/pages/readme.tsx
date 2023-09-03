@@ -1,4 +1,5 @@
 import NextLocomotiveScroll from "../components/NextLocomotiveScroll";
+import React from "react";
 
 export default function Readme() {
     return (

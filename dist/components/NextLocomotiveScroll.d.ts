@@ -1,11 +1,11 @@
-import { RefObject } from "react";
+import React, { RefObject } from "react";
 import __LocomotiveScroll from 'locomotive-scroll';
 type NextLocomotiveContextValue = {
     wrapperRef: RefObject<HTMLDivElement>;
     instance: __LocomotiveScroll | null;
     ready: boolean;
 };
-export declare const NextLocomotiveScrollContext: import("react").Context<NextLocomotiveContextValue | null>;
+export declare const NextLocomotiveScrollContext: React.Context<NextLocomotiveContextValue | null>;
 type Props = {
     children?: any;
     options?: __LocomotiveScroll.InstanceOptions;
