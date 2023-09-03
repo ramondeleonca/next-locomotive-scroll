@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "sourceMap": false,
+    "sourceMap": true,
     "declaration": true,
     "strict": true,
     "noUnusedLocals": false,
     "skipLibCheck": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "removeComments": false,
+    "removeComments": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -16,13 +16,23 @@
     "moduleResolution": "Node",
     "target": "ES2015",
     "importHelpers": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "lib": [
       "DOM",
       "ESNext"
     ],
+    "forceConsistentCasingInFileNames": true,
+    // "noEmit": true,
+    "incremental": true
   },
-  "files": [
-    "src/components/NextLocomotiveScroll.tsx"
+  "include": [
+    "src/components/NextLocomotiveScroll.tsx",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }

@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = tslib_1.__importDefault(require("react"));
 const gsap_1 = tslib_1.__importDefault(require("gsap"));
 const ScrollTrigger_1 = tslib_1.__importDefault(require("gsap/dist/ScrollTrigger"));
@@ -15,7 +14,11 @@ class NextLocomotiveScroll extends react_1.default.Component {
         };
     }
     render() {
-        return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsx)("div", Object.assign({ ref: this.container }, { children: this.props.children })) }));
+        return (<>
+                <div ref={this.container}>
+                    {this.props.children}
+                </div>
+            </>);
     }
     componentDidMount() {
         Promise.resolve().then(() => tslib_1.__importStar(require("locomotive-scroll"))).then(_LocomotiveScroll => {
@@ -54,3 +57,4 @@ class NextLocomotiveScroll extends react_1.default.Component {
     }
 }
 exports.default = NextLocomotiveScroll;
+//# sourceMappingURL=NextLocomotiveScroll.old.jsx.map
