@@ -14,11 +14,8 @@ class NextLocomotiveScroll extends react_1.default.Component {
         };
     }
     render() {
-        return (<>
-                <div ref={this.container}>
-                    {this.props.children}
-                </div>
-            </>);
+        return (react_1.default.createElement(react_1.default.Fragment, null,
+            react_1.default.createElement("div", { ref: this.container }, this.props.children)));
     }
     componentDidMount() {
         Promise.resolve().then(() => tslib_1.__importStar(require("locomotive-scroll"))).then(_LocomotiveScroll => {
@@ -57,4 +54,4 @@ class NextLocomotiveScroll extends react_1.default.Component {
     }
 }
 exports.default = NextLocomotiveScroll;
-//# sourceMappingURL=NextLocomotiveScroll.old.jsx.map
+//# sourceMappingURL=NextLocomotiveScroll.old.js.map

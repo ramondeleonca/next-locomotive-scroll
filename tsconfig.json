@@ -16,7 +16,7 @@
     "moduleResolution": "Node",
     "target": "ES2015",
     "importHelpers": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "lib": [
       "DOM",
       "ESNext"

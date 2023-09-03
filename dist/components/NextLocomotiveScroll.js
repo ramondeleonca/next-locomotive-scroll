@@ -64,15 +64,12 @@ function NextLocomotiveScroll(props) {
                 });
             });
     }, [ready, instance]);
-    return (<exports.NextLocomotiveScrollContext.Provider value={{ wrapperRef, instance, ready }}>
-            <div ref={wrapperRef} style={{ position: "fixed", top: "0px", minWidth: "100%", minHeight: "100%" }}>
-                {props.children}
-            </div>
-        </exports.NextLocomotiveScrollContext.Provider>);
+    return (React.createElement(exports.NextLocomotiveScrollContext.Provider, { value: { wrapperRef, instance, ready } },
+        React.createElement("div", { ref: wrapperRef, style: { position: "fixed", top: "0px", minWidth: "100%", minHeight: "100%" } }, props.children)));
 }
 exports.default = NextLocomotiveScroll;
 function useNextLocomotiveScroll() {
     return (0, react_1.useContext)(exports.NextLocomotiveScrollContext);
 }
 exports.useNextLocomotiveScroll = useNextLocomotiveScroll;
-//# sourceMappingURL=NextLocomotiveScroll.jsx.map
+//# sourceMappingURL=NextLocomotiveScroll.js.map
